@@ -6,7 +6,7 @@ import Package from './package.json';
 const config = {
 	cache: true,
 	entry:  {
-		app: './src/app.js',
+		bundle: './src/bundle.js',
 	},
 	output: {
 		filename: '[name].js',
