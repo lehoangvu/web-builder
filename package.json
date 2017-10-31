@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "webpack -d --color --watch --progress --config webpack.babel.js",
+    "dev": "run-p dev-js dev-sass",
+    "dev-js": "webpack -d --color --watch --progress --config webpack.babel.js",
+    "dev-sass": "gulp dev",
     "serve": "webpack-dev-server webpack.local.js"
   },
   "author": "vu.le@tiki.vn",
   "devDependencies": {
+    "antd": "^2.13.8",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.0.0",
